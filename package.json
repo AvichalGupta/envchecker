@@ -10,14 +10,14 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:envchecker.helloWorld"
+		"onCommand:envchecker.checkFile"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "envchecker.helloWorld",
-				"title": "Hello World"
+				"command": "envchecker.checkFile",
+				"title": "check-env"
 			}
 		]
 	},
@@ -41,5 +41,8 @@
 		"mocha": "^9.2.1",
 		"typescript": "^4.5.5",
 		"@vscode/test-electron": "^2.1.2"
+	},
+	"dependencies": {
+		"moment": "^2.29.2"
 	}
 }
